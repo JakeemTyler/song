@@ -1,0 +1,105 @@
+<!-- @format -->
+
+    <title>Song Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="song.js"></script>
+    </script>
+  </head>
+
+  <body>
+    <h1>Song Generator</h1>
+    <div id="wrapper">
+    <div id="textArea"></div>
+    <div id="dashboard">
+    <div class="paragraphBlock">
+    <button id="id_setTitle" onclick="genereTitle()">Genere</button
+<label for="titles">Please select your genere </label>
+
+        <select name="name_titles" id="id_titles">
+        <option value="Upbeat">Upbeat</option>
+        <option value="Melanchonly">Melanchonly</option>
+        </select> 
+           
+        <label for="id_receiverName"> Name of song </label>
+        <input
+            type="text"
+            id="id_receiverName"
+            name="name_receiverName"
+            value=""
+            maxlength="25"
+            size="25"
+          />
+          </div>
+
+        <div class="paragraphBlock">
+          <button id="id_createpara1" onclick="createVerse()">Create</button
+          ><label for="paragraphNum"> Paragraph Number </label>
+          <input
+            type="text"
+            id="id_verseToCreate"
+            name="name_paragraphNumberToCreate"
+            value="1"
+            maxlength="1"
+            size="1"
+          />
+          <br>
+
+          <label for="freeSpace">Enter the text for your paragraph:</label> or  <button id="id_randomfill" onclick="randomfillParagraph()">random fill</button>
+            <br />
+
+            <textarea
+              id="id_freeSpace"
+              name="name_freeSpace"
+              rows="4"
+              cols="50"
+            >
+Enter your verse here...
+</textarea
+            >
+          </div>
+
+          <div class="paragraphBlock">
+            <button id="changeAll" onclick="addImportant(true)">Add AdLib Before </button><input
+            type="text"
+            id="id_importantBefore"
+            name="name_importantBefore"
+            value="1"
+            maxlength="1"
+            size="2"
+          /><br>
+              <button id="changeAll" onclick="addImportant(false)">Add AdLib After</button><input
+            type="text"
+            id="id_importantAfter"
+            name="name_importantAfter"
+            value="1"
+            maxlength="24"
+            size="1"
+          />
+          </div>
+
+                  <div class="paragraphBlock">
+          <button id="id_setBye" onclick="endSong()">Sign Off Letter</button
+             <label for="id_signoffs">Choose:</label>
+                <select name="name_signoffs" id="id_signoffs">
+                <option value="Sincerely yours, the GOAT">Sincerely yours, the GOAT</option>
+                <option value="WE DA BEST">WE DA BEST</option>
+          
+                </select> 
+            <br />
+            <label for="id_senderName"> Ending Quote or Verse </label
+          ><input
+            type="text"
+            id="id_senderName"
+            name="name_senderName"
+            value=""
+            maxlength="100"
+            size="25"
+          />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
